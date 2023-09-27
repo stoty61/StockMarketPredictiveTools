@@ -42,7 +42,7 @@ from trax import layers as tl
 
 transformer_model = tl.Serial(
     tl.ShiftRight(mode='train'),  # Shift the input to the right
-    tl.EmbeddingAndPositionalEncodings(),  # Add positional encodings to the input embedding
+    tl.EmbeddingAndPositionalEncodings(),  # Add positional encodings to the input embeddings
     # You can add multiple transformer layers here
     tl.Transformer(d_model=32, n_heads=4, d_ff=64),
     tl.Dense(1)
