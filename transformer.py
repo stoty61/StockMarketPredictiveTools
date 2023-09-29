@@ -48,7 +48,7 @@ transformer_model = tl.Serial(
     tl.Dense(1)
 )
 
-# Define a custom loss function for regression 
+# Define a custom loss function for regression tasks
 def mean_squared_error(y_true, y_pred):
     return tf.reduce_mean((y_true - y_pred) ** 2)
 
