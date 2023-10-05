@@ -35,7 +35,7 @@ rnn_model = tf.keras.models.Sequential([
 rnn_model.compile(optimizer='adam', loss='mean_squared_error')
 rnn_model.fit(X_train, y_train, epochs=20, batch_size=32)
 
-# Define and train a Transformer model (you can use libraries like Trax or Tens
+# Define and train a Transformer model (you can use libraries like Trax or Tensor2Tensor)
 # This example assumes Trax for the Transformer model
 import trax
 from trax import layers as tl
